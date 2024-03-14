@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 in one js project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- JAVASCRIPT CLOCK STARTS HERE -->
+    <div id="mainclock">
+        <div id="clock">
+            <div id="date">
+                <span>Sunday, Jan 01, 1999</span>
+            </div>
+            <div id="ttime">
+                <span>00</span>
+                <span>:</span>
+                <span>00</span>
+                <span>:</span>
+                <span>00</span>
+                <span>AM</span>
+            </div>
+        </div>
+    </div>
+    <!-- stopwatch code starts here -->
+    <div id="mainstop">
+        <div id="stopwatch">
+            <div class="box">
+                <span>00</span><span>:</span><span>00</span><span>:</span><span>00</span><span>:</span><span>00</span>
+            </div>
+            <div class="box">
+                <button onclick="start()" style="--blue: #1e90ff;">START</button>
+                <button onclick="stop()" style="--blue: #ff1d58">STOP</button>
+                <button onclick="reset()" style="--blue: #8458B3">RESET</button>
+            </div>
+        </div>
+    </div>
+    <!-- js interst calculator -->
+
+    <div class="main">
+        <h3>Simple Interst Calculator</h3>
+        <div class="input">
+            <label for="type">type of interst</label><select name="" id="type">
+                <option value="simple interst">simple interst</option>
+                <option value="compound interest">compound interest</option>
+            </select>
+            <label for="rs">Principal Amount (Total)</label><input id="rs" type="number">
+            <label for="rate">Rate Of Interest (Yearly)</label><input type="number" id="rate">
+            <label for="period">Period (in Years)</label><input type="number" name="" id="period">
+        </div>
+        <div class="calculate">
+            <button onclick="calcu()">calculate</button><button onclick="reset_int()">reset</button>
+        </div>
+        <div class="values">
+            <p>Interest Earned:</p><span id="int"></span>
+            <h1></h1>
+            <p>Total Value:</p><span id="tot"></span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        let spn1 = document.getElementById('int');
+        let spn2 = document.getElementById('tot');
+        let amount = document.getElementById('rs');
+        let iner = document.getElementById('rate');
+        let period = document.getElementById('period');
+        let calcu = () => {
+            let type = document.getElementById('type').value;
+            if (type == 'simple interst') {
+                let val = ((amount.value / 100) * iner.value * period.value);
+                spn1.innerHTML = val.toFixed(2) + '$';
+                let int = Number(amount.value) + Number((amount.value / 100) * (iner.value) * period.value);
+                spn2.innerHTML = int.toFixed(2) + '$';
+            } else {
+                let val = amount.value * ((1 + rate.value / 1200) ** (12 * (period.value)));
+                let int = [amount.value * ((1 + rate.value / 1200) ** (12 * (period.value)))] - amount.value;
+                spn1.innerHTML = int.toFixed(2) + '$';
+                spn2.innerHTML = val.toFixed(2) + '$';
+            }
+        };
+        let reset_int = () => {
+            iner.value = "";
+            period.value = "";
+            spn1.innerHTML = "";
+            spn2.innerHTML = "";
+            amount.value = "";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* 
+js stopwatch starts here */
+#mainstop{
+    width: 100%;
+    height: 50vh;
+    background: rgb(226, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#stopwatch{
+    height: 150px;
+    width: 200px;
+    transform: scale(2);
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.938));
+}
+#stopwatch .box:nth-child(1){
+    position: absolute;
+    width: 230px;
+    left: -15px;
+    height: 50px;
+    top: 20%;
+    border-radius: 4px;
+    background: linear-gradient(225deg, rgb(0, 60, 255), rgb(0, 132, 255));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#stopwatch .box:nth-child(1) span{
+    font-size: 20px;
+    display: block;
+    font-weight: 1000;
+    margin: 10px 0px;letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+#stopwatch .box:nth-child(2){
+    margin: 105px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#stopwatch .box:nth-child(2) button{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 3px 5px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    background: white;
+}
+
+/* 
+js clock starts here */
+#mainclock{
+    width: 100%;
+    height: 50vh;
+    background: #141522;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clock{
+    height: 50px;
+    transform: scale(2);
+    width: 140px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgb(47, 158, 255);
+    border-radius: 5px;
+    background-color: rgb(47, 158, 255);
+}
+#clock #date{
+    width: 100%;
+}
+#clock #date span{
+    font-size: 8px;
+    text-align: center;
+    font-weight: 1000;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: block;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.644);
+}
+#clock #ttime{
+    display: flex;
+    justify-content: space-between;
+}
+#clock #ttime span{
+    font-size: 15px;
+    font-weight: 1000;
+    color: white;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.644);
+}
+#clock #ttime span:nth-child(6){
+    font-size: 10px;
+}
+
+
+
+/* interst */
+
+.main {
+    margin: 80px 0px;
+    background-color: rgba(210, 210, 248, 0.336);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(210, 210, 248, 0.336);
+    position: relative;
+}
+.main h3{
+    text-align: center;
+    width: 250px;
+    margin: 20px 0px;
+    opacity: 0.9;
+}
+label {
+    display: block;
+    margin: 5px 0px;
+    font-size: 12px;
+}
+.main select{
+    border: none;
+    outline: none;
+}
+.main input{
+    border: none;
+    outline: none;
+    padding: 2px;
+    font-size: 12px;
+}
+.main button:nth-child(1){
+    border: none;
+    outline: none;
+    background: rgb(0, 68, 255);
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px 0px;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.main button:nth-child(2){
+    border: none;
+    outline: none;
+    background: rgb(255, 0, 170);
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.values p {
+    font-size: 12px;
+    margin-right: 10px;
+    padding: 2px;
+    display: inline;
+}
+.values span{
+    display: inline;
+    font-size: 12px;
+    padding: 2px;
+}

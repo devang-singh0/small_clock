@@ -1,8 +1,9 @@
 ![image](https://github.com/devang-singh0/small_clock/assets/100257042/3e08e5dc-cf50-4c86-a1e4-131088b5ab4f)
 
 
+
 ## 🔗 Important Links
-[![LIVE AT](https://img.shields.io/badge/LIVE_AT-000?style=for-the-badge&logo=ko-fi&logoColor=white)]([https://devang-singh0.github.io/small_clock/])
+[![LIVE AT](https://img.shields.io/badge/LIVE_AT-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://devang-singh0.github.io/small_clock/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devang-singh-b29353255/)
 [![PORTFOLIO](https://img.shields.io/badge/portfolio-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://devang-singh0.github.io/portfolio/)
 
